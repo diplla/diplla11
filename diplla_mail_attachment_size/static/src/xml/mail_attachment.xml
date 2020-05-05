@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+  <t t-extend="FieldBinaryFileUploader">
+    <t t-jquery="button[class='btn btn-default o_attach']" t-operation="after">
+        <t t-set="fsize" t-value="0" />
+        <div t-foreach="widget.value.data" t-as="file" class="oe_attachment">
+            <t t-set="fsize" t-value="fsize+file.data.file_size"/>
+        </div>
+        <input type="hidden" t-att-value="fsize" id="total_bytes" class="total_bytes"/>
+        <h3>Attachment(s) size :  <b><span id="attachment_size" class="attachment_size"> 0 B</span></b></h3>
+        <script type="text/javascript" src="/diplla_mail_attachment_size/static/src/js/formula.js"/>
+    </t>
+  </t>
+</templates>

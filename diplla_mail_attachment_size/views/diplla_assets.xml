@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <template id="diplla_assets" name="Diplla Assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <!--<link rel="stylesheet" href="/grimm_web_replace/static/src/css/grimm_web.css" />-->
+            <script txpe="text/javascript" src="/diplla_mail_attachment_size/static/src/js/mail_attachment.js" />
+        </xpath>
+    </template>
+</openerp>
