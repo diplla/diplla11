@@ -37,4 +37,5 @@
     ],
     'installable': True,
     'qweb': ['static/src/xml/mail_attachment.xml', ],
+    "images": ['static/description/icon.png'],
 }
