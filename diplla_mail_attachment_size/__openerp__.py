@@ -38,5 +38,5 @@
     'installable': True,
     'qweb': ['static/src/xml/mail_attachment.xml', ],
     "images": ['static/description/icon.png'],
-    'license':' LGPL-3',
+    'license':'LGPL-3',
 }
